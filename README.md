@@ -1,0 +1,1 @@
+Each project folder contains a .js and .html with the project code. Open the .html in browser to see the project. Project A shows shape and joint creation and manipulation. Project B shows camera navigation.
