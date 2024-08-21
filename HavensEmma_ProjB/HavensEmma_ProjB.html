@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ver05 Robot Arm</title>
+  </head>
+
+  <body onload="main()" onresize="drawResize()">
+    <canvas id="webgl" width="800" height="800">
+    Please use a browser that supports "canvas"
+    </canvas>
+<br>
+    <p>
+        Control movement of hexagonal snake: 
+	    <input type="button" id="A0button" onclick="A0_runStop()" value="Stop hexagonal snake">
+    </p>
+    <p>
+        Control movement of fractal jellyfish:      
+      	<input type="button" id="A1button" onclick="A1_runStop()" value="Stop jellyfish travel">
+	    <input type="button" id="A2button" onclick="A2_runStop()" value="Stop jellyfish limbs">
+	<! these commands create a push-button with labels 'Angle 0', 'Angle 1', etc.
+	When users click the button, call the function name held in 'onclick'>
+    </p>
+    <p>
+        Rotate the d20 by dragging it with the mouse.<br>
+        Reset rotation: 
+	    <input type="button" id="A3button" onclick="d20_reset()" value="Reset">
+    </p>
+    <p>WASD to control camera strafe, arrow keys to change look at direction, Q to zoom out, E to zoom in</p>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+    <script src="HavensEmma_ProjB.js"></script>
+  </body>
+</html>
